@@ -10,6 +10,7 @@
         "clsx": "^2.1.1",
         "eslint-config-airbnb": "^19.0.4",
         "eslint-config-airbnb-typescript": "^18.0.0",
+        "lucide": "^0.477.0",
         "lucide-react": "^0.476.0",
         "next": "15.2.0",
         "react": "^19.0.0",
@@ -562,6 +563,8 @@
     "loose-envify": ["loose-envify@1.4.0", "", { "dependencies": { "js-tokens": "^3.0.0 || ^4.0.0" }, "bin": { "loose-envify": "cli.js" } }, "sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q=="],
 
     "lower-case": ["lower-case@2.0.2", "", { "dependencies": { "tslib": "^2.0.3" } }, "sha512-7fm3l3NAF9WfN6W3JOmf5drwpVqX78JtoGJ3A6W0a6ZnldM41w2fV5D490psKFTpMds8TJse/eHLFFsNHHjHgg=="],
+
+    "lucide": ["lucide@0.477.0", "", {}, "sha512-lEgt1ni9sKohbLsYWSnM3mKVRkvUrJ3Ijj01RAdM5F0iyvxkCcy3gPrb1G2ux6zE4y20ptcitfMa0OOFXI57gw=="],
 
     "lucide-react": ["lucide-react@0.476.0", "", { "peerDependencies": { "react": "^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0" } }, "sha512-x6cLTk8gahdUPje0hSgLN1/MgiJH+Xl90Xoxy9bkPAsMPOUiyRSKR4JCDPGVCEpyqnZXH3exFWNItcvra9WzUQ=="],
 
