@@ -1,5 +1,6 @@
+"use client"
 import Templates from '@/app/(data)/Templates'
-import React from 'react'
+import React, { useState, useEffect} from 'react'
 import TemplateCard from './TemplateCard'
 
 export interface TEMPLATE{
@@ -19,11 +20,25 @@ export interface FORM{
     required?:boolean
 }
 
-function TemplateListSection() {
-
+function TemplateListSection({userSearchInput}:any) {
+    const [templateList, setTemplateList] = useState(Templates)
+    useEffect(
+        ()=>{
+            if (userSearchInput) {
+                const filterData = Templates.filter((item: TEMPLATE) => (
+                    item.name.toLowerCase().includes(userSearchInput.toLowerCase())
+                ))
+                setTemplateList(filterData)
+            }
+            else{
+                    setTemplateList(Templates)
+                }
+            }
+        ,[userSearchInput]
+  )
   return (
     <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 p-10'>
-        {Templates.map((item:TEMPLATE,index:number)=>(
+        {templateList.map((item:TEMPLATE,index:number)=>(
         <TemplateCard {...item} key={index} />
         ))}
     </div>

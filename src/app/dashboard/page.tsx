@@ -9,9 +9,9 @@ function Dashboard() {
   return (
     <div>
       {/* Search Section */}
-      <SearchSection onSearchInput={(value:string)=>console.log(value)} />  
+      <SearchSection onSearchInput={(value:string)=>setUserSearchInput(value)} />  
       {/* Template List Section */}
-      <TemplateListSection />
+      <TemplateListSection userSearchInput={userSearchInput} />
     </div>
   )
 }
