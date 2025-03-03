@@ -19,7 +19,7 @@ function SideNav() {
     }, [path])
     
     return (
-        <div className='h-screen p-5 shadow-sm border'>
+        <div className='h-screen w-48 p-5 shadow-sm border'>
             <div className='flex justify-center'>
             <Image src={'/logo.svg'} alt='logo' width={100} height={100} />
             </div>
@@ -27,12 +27,12 @@ function SideNav() {
             <div className='mt-3'>
                 {MenuList.map((menu, index) => (
                     <div className={`
-                        flex gap-2 mb-2 p-3 hover:bg-gray-600 hover:text-white 
-                        rounded-lg cursor-pointer items-center
+                        flex gap-3 mb-2 p-3 hover:bg-gray-600 hover:text-white 
+                        rounded-lg cursor-pointer items-center transition-colors
                     ${path == menu.path && 'bg-gray-600 text-white'}
                     `} key={index}>
-                        <menu.icon className='h-6 w-6' />
-                        <h2 className='text-lg'>{menu.name}</h2>
+                        <menu.icon className='h-5 w-5 flex-shrink-0' />
+                        <h2 className='text-base'>{menu.name}</h2>
                     </div>
                 ))}
             </div>
