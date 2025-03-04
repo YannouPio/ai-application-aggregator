@@ -13,8 +13,6 @@ function Header() {
         />
       </div>
       <div className='flex gap-5 items-center'>
-        <h2 className='bg-gray-600 p-1 rounded-full text-sm text-white px-2'>
-          加入会员计划</h2>
       <UserButton/>
       </div>
     </div>
