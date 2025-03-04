@@ -7,10 +7,10 @@ import { usePathname } from 'next/navigation'
 function SideNav() {
 
     const MenuList = [
-        {name: 'Home', icon: Home, path: '/dashboard'},
-        {name: 'History', icon: FileClock, path: '/dashboard/history'},
-        {name: 'Billing', icon: Home, path: '/dashboard/billing'},
-        {name: 'Settings', icon: Settings, path: '/dashboard/settings'},
+        {name: '首页', icon: Home, path: '/dashboard'},
+        {name: '历史', icon: FileClock, path: '/dashboard/history'},
+        {name: '账单', icon: Home, path: '/dashboard/billing'},
+        {name: '设置', icon: Settings, path: '/dashboard/settings'},
     ]
 
     const path = usePathname();
@@ -19,9 +19,9 @@ function SideNav() {
     }, [path])
     
     return (
-        <div className='h-screen w-48 p-5 shadow-sm border'>
+        <div className='h-screen w-48 p-5 shadow-sm border bg-gray-100'>
             <div className='flex justify-center'>
-            <Image src={'/logo.svg'} alt='logo' width={100} height={100} />
+            <Image src={'/logo.svg'} alt='logo' width={80} height={100} />
             </div>
             <hr className='my-6 border' />
             <div className='mt-3'>
