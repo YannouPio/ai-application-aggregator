@@ -7,13 +7,15 @@ function layout({children,
   children: React.ReactNode;
 }>) {
     return (
-        <div className='bg-white min-h-screen'>
-            <div className='md:w-64 hidden md:block fixed'>
+        <div className='flex bg-white min-h-screen'>
+            <div className='w-64 hidden md:block fixed h-screen'>
                 <SideNav />
             </div>
-            <div className='md:ml-64'>
+            <div className='flex-1 md:ml-64'>
                 <Header />
-                {children}
+                <main>
+                    {children}
+                </main>
             </div>
         </div>
     )

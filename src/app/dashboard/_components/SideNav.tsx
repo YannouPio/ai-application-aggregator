@@ -9,8 +9,6 @@ function SideNav() {
 
     const MenuList = [
         {name: '首页', icon: Home, path: '/dashboard'},
-        // {name: '历史', icon: FileClock, path: '/dashboard/history'},
-        // {name: '账单', icon: Home, path: '/dashboard/billing'},
         {name: '设置', icon: Settings, path: '/dashboard/settings'},
     ]
 
@@ -20,9 +18,9 @@ function SideNav() {
     }, [path])
     
     return (
-        <div className='h-screen w-48 p-5 shadow-sm border bg-gray-100'>
+        <div className='h-screen w-full p-5 border-r border-gray-200r bg-gray-100'>
             <div className='flex justify-center'>
-            <Image src={'/logo.svg'} alt='logo' width={80} height={100} />
+                <Image src={'/logo.svg'} alt='logo' width={80} height={80} />
             </div>
             <hr className='my-6 border' />
             <div className='mt-3'>
