@@ -1,9 +1,8 @@
 import { UserProfile } from "@clerk/nextjs";
-import { useUser } from "@clerk/nextjs";
 
 export default function SettingsPage() {
   return (
-    <div>
+    <div className="p-4 w-full flex justify-center">
       <UserProfile />
     </div>
   );
