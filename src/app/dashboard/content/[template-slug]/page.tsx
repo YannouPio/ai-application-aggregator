@@ -8,18 +8,19 @@ import { Button } from '@/components/ui/button'
 import { ArrowLeft } from 'lucide-react'
 import Link from 'next/link'
 import { chatSession } from '../../../../../utils/AIModal'
-interface PROPS{
-  params: {
+
+interface PROPS {
+  params: Promise<{
     'template-slug': string
-  }
+  }>
 }
 
 function CreateNewContent(props: PROPS) {
+  // 使用 React.use 钩子来解包 Promise
   const { 'template-slug': templateSlug } = React.use(props.params);
-  const selectedTemplate:TEMPLATE|undefined=Templates?.find((item)=>item.slug==templateSlug);
+  const selectedTemplate: TEMPLATE | undefined = Templates?.find((item) => item.slug === templateSlug);
   const [loading, setLoading] = React.useState(false);
   const [aiOutput, setAiOutput] = React.useState<string>('');
-
 
   const GenerateAIContent = async (formData: any) => {
     setLoading(true);
@@ -31,6 +32,7 @@ function CreateNewContent(props: PROPS) {
     setAiOutput(result?.response.text)
     setLoading(false);
   }
+
   return (
     <div className='p-10'>
       <Link href='/dashboard/'>
@@ -44,7 +46,7 @@ function CreateNewContent(props: PROPS) {
         />
         {/* OutputSection */}
         <div className='col-span-2'>  
-          <OutputSection aiOutput={aiOutput } />
+          <OutputSection aiOutput={aiOutput} />
         </div>
       </div>
     </div>
