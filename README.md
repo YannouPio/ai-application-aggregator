@@ -4,8 +4,6 @@ A modern platform that aggregates AI-powered applications and templates, providi
 
 [English](README.md) | [中文文档](README-CN.md)
 
-<img alt="AI Application Aggregator Dashboard" src="https://placeholder-for-dashboard-screenshot.com/">
-
 # ✨ Features
 - AI Template Library: Browse and access a curated collection of AI application templates
 - Secure Authentication: Role-based access control through Clerk authentication

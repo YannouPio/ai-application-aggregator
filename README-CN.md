@@ -4,8 +4,6 @@
 
 [English](README.md) | [中文文档](README-CN.md)
 
-<img alt="AI应用聚合平台仪表盘" src="https://placeholder-for-dashboard-screenshot.com/">
-
 # ✨ 特性
 - AI模板库：浏览并访问精选的AI应用模板集合
 - 安全认证：通过Clerk认证实现基于角色的访问控制
