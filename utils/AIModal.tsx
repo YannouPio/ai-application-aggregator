@@ -20,7 +20,6 @@ const generationConfig = {
 };
 
 export const chatSession = model.startChat({
-generationConfig,
-history: [
-],
+  generationConfig,
+  history: [],
 });
